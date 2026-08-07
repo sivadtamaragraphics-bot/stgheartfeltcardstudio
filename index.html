@@ -295,6 +295,21 @@
               <select id="cardType"></select>
             </div>
             <div>
+              <label for="d9Organization">Specific D9 Sorority / Fraternity</label>
+              <select id="d9Organization">
+                <option value="None">None — Not a D9 Card</option>
+                <option value="Alpha Kappa Alpha Sorority, Incorporated">Alpha Kappa Alpha Sorority, Incorporated</option>
+                <option value="Delta Sigma Theta Sorority, Incorporated">Delta Sigma Theta Sorority, Incorporated</option>
+                <option value="Zeta Phi Beta Sorority, Incorporated">Zeta Phi Beta Sorority, Incorporated</option>
+                <option value="Sigma Gamma Rho Sorority, Incorporated">Sigma Gamma Rho Sorority, Incorporated</option>
+                <option value="Alpha Phi Alpha Fraternity, Incorporated">Alpha Phi Alpha Fraternity, Incorporated</option>
+                <option value="Kappa Alpha Psi Fraternity, Incorporated">Kappa Alpha Psi Fraternity, Incorporated</option>
+                <option value="Omega Psi Phi Fraternity, Incorporated">Omega Psi Phi Fraternity, Incorporated</option>
+                <option value="Phi Beta Sigma Fraternity, Incorporated">Phi Beta Sigma Fraternity, Incorporated</option>
+                <option value="Iota Phi Theta Fraternity, Incorporated">Iota Phi Theta Fraternity, Incorporated</option>
+              </select>
+            </div>
+            <div>
               <label for="language">Language</label>
               <select id="language"></select>
             </div>
@@ -423,6 +438,27 @@
             <div>
               <label for="format">Card Format</label>
               <select id="format"></select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card hidden" id="d9CardOptions">
+        <div class="card-head"><h2>D9 Sorority &amp; Fraternity Card Options</h2></div>
+        <div class="card-body">
+          <div class="directions">Choose one organization. Colors, Greek letters, and associated elements will stay coordinated and will never be mixed with another organization.</div>
+          <div class="grid2">
+            <div>
+              <label for="d9Occasion">D9 Card Occasion</label>
+              <select id="d9Occasion"></select>
+            </div>
+            <div>
+              <label for="d9RecipientTerm">Recipient Term</label>
+              <select id="d9RecipientTerm"></select>
+            </div>
+            <div>
+              <label for="d9ElementStyle">Organization Elements</label>
+              <select id="d9ElementStyle"></select>
             </div>
           </div>
         </div>
@@ -669,6 +705,21 @@
       layouts:["Image left, message right","Minimal centered typography","Large quote with supporting message"],
       messages:["A job ending does not diminish your talent, value, or potential.","This transition is not the end of your story.","One closed door cannot cancel the gifts you carry."]
     },
+    d9Cards:{
+      label:"D9 Sorority & Fraternity Cards",
+      focuses:["Birthday","Congratulations","Line Anniversary","Founders’ Day","Graduation","Encouragement","Sympathy and Support","Retirement","Appreciation","Welcome to the Chapter","Going Away and Farewell","Sisterhood","Brotherhood","Chapter Recognition","General Celebration"],
+      tones:["Modern and Professional","Warm and Heartfelt","Bold and Celebratory","Elegant and Refined","Luxury and Polished","Proud and Uplifting","Sisterly and Supportive","Brotherly and Strong","Faith-Based and Gracious","Fun and Energetic","Varsity and Spirited","Sentimental and Meaningful","Formal and Distinguished","Contemporary and Stylish","Joyful and Community-Centered"],
+      palettes:["Organization-Coordinated Colors","Organization Colors with White","Organization Colors with Gold Accents","Organization Colors with Silver Accents","Organization Colors with Black Accents","Soft Organization Color Palette","Bold Organization Color Palette","Pastel Organization Color Palette","Deep Jewel-Tone Organization Palette","Monochrome Organization Palette","Organization Colors with Cream","Organization Colors with Metallic Foil","Organization Colors with Denim Blue","Organization Colors with Neutral Taupe","Custom Organization-Coordinated Palette"],
+      styles:["Modern D9 Editorial","Luxury Greek-Letter Card","Varsity Chenille Celebration","Professional Chapter Keepsake","Bold Organization Typography","Contemporary Sisterhood Card","Contemporary Brotherhood Card","Elegant Founders’ Day Tribute","Line Anniversary Keepsake","Graduation Celebration","Modern Campus Style","Refined Floral D9 Card","High-Gloss 3D Lettering","Minimal Organization Pride","Premium Boutique D9 Card"],
+      backgrounds:["Organization-color gradient","Modern campus architecture","Clean white studio with organization-color accents","Varsity fabric texture","Elegant floral arrangement in organization colors","Chapter celebration setting","Graduation stage details","Abstract paint strokes in organization colors","Luxury marble with coordinated accents","Denim and chenille texture","Modern geometric pattern","Soft watercolor in organization colors","Professional office or leadership setting","Celebration confetti backdrop","Minimal cream background"],
+      focal:["Large Greek letters","Chenille Greek-letter patch","Organization-colored floral arrangement","Varsity jacket detail","Chapter anniversary number","Graduation cap and stole","Elegant birthday cake in organization colors","Line anniversary year","Organization-associated symbolic element","Framed chapter photo placeholder","Bold recipient title","Founders’ Day typography","Pearl or metallic accessory arrangement","Professional character portrait space","Large celebratory quote"],
+      decorative:["Organization-coordinated symbolic accents","Chenille patch details","Metallic line accents","Varsity stripes","Pearl accents where appropriate","Floral corners in organization colors","Greek-letter confetti","Elegant divider lines","Denim stitching","High-gloss sparkles","Geometric accents","Chapter-year details","Ribbon accents","Minimal accents","No decorative elements"],
+      borders:["Organization-color double-line border","Varsity stripe frame","Chenille stitched border","Thin elegant line","Metallic inset frame","Rounded modern frame","Floral corner frame","Greek-key inspired geometric frame","Pearl-accented border where appropriate","Bold color-block frame","Luxury foil border","Photo-frame border","Minimal modern border","Soft watercolor edge","No border"],
+      textures:["Chenille texture","Embroidered patch texture","Smooth high-gloss finish","Metallic foil","Denim texture","Varsity wool texture","Soft paper grain","Linen texture","Pearlescent finish","Matte editorial finish","Velvet matte finish","Watercolor wash","Fine card stock grain","Holographic shimmer","Clean digital finish"],
+      fonts:["Chenille Greek Letters + Clean Sans","Varsity Greek Letters + Modern Sans","Bold Greek Letters + Elegant Serif","Luxury Serif + Greek-Letter Display","Chrome Greek Letters + Bold Sans","Gel Greek Letters + Minimal Sans","Bubble Greek Letters + Rounded Sans","Formal Serif + Soft Script","Modern Sans + Elegant Serif","Classic Serif + Small Caps","High-Fashion Serif + Minimal Sans","Editorial Serif + Clean Sans","Embroidered Letters + Sans","Bold Display + Minimal Sans","Graceful Script + Serif"],
+      layouts:["Large Greek letters with supporting message","Centered organization symbol with text below","Varsity patch headline layout","Modern split-panel card","Editorial side-bar composition","Photo focal with chapter message","Full-bleed organization-color background with text panel","Centered headline with elegant divider","Line-anniversary number focal layout","Founders’ Day tribute layout","Graduation keepsake layout","Birthday cake with Greek-letter topper","Minimal centered typography","Layered organization-color blocks","Luxury invitation-style composition"],
+      messages:["Celebrating the strength, service, and sisterhood that continue to make your journey meaningful.","Wishing you a joyful celebration filled with pride, purpose, and unforgettable memories.","Your commitment, leadership, and love for the organization deserve to be celebrated.","Here is to another year of excellence, service, and bonds that stand the test of time.","May this milestone remind you of how far you have come and how brightly your legacy continues to shine.","Celebrating you with pride and wishing you continued success in every chapter ahead.","The letters connect us, but the love, service, and shared purpose make the bond lasting.","Congratulations on a well-earned achievement and a moment worthy of true celebration.","Wishing you strength, encouragement, and the steady support of those who proudly stand beside you.","May your special day be filled with joy, fellowship, and all the appreciation you deserve.","Honoring the history, celebrating the present, and building an even stronger future together.","Your presence and contributions have made a meaningful difference to the chapter and community.","Cheers to the memories, milestones, and lifelong connections created along the way.","May you continue to lead with purpose, serve with heart, and inspire with excellence.","Celebrating a bond built on history, strengthened through service, and carried forward with pride."]
+    },
     goingAway:{
       label:"Going Away / Farewell",
       focuses:["New Job or Career Move","Relocation to a New City","Coworker Farewell","Friend Moving Away","Family Relocation","Teacher or Principal Farewell","Student Leaving School","Retirement Send-Off","College Move-Away","Military Assignment","Pastor or Church Leader Farewell","Neighbor Moving","Team Member Departure","Long-Distance Friendship","New Chapter and Adventure"],
@@ -912,6 +963,7 @@
 
   const quickStarts = [
     {label:"Birthday Card",desc:"A modern birthday card with warm wishes, bold celebration, and stylish birthday details.",type:"birthday",palette:"Hot Pink, Kelly Green, Gold, White",style:"Modern Birthday Editorial",tone:"Modern and Warm",focus:"General Birthday Wishes"},
+    {label:"D9 Sorority & Fraternity Card",desc:"An organization-coordinated D9 card for birthdays, milestones, line anniversaries, Founders’ Day, and more.",type:"d9Cards",palette:"Organization-Coordinated Colors",style:"Modern D9 Editorial",tone:"Modern and Professional",focus:"General Celebration",organization:"Alpha Kappa Alpha Sorority, Incorporated"},
     {label:"Going Away / Farewell",desc:"A warm, polished farewell card for relocation, career moves, school, retirement, or a new adventure.",type:"goingAway",palette:"Navy, Cream, Gold",style:"Modern Travel Editorial",tone:"Warm and Bittersweet",focus:"New Chapter and Adventure"},
     {label:"Sympathy Card",desc:"A polished sympathy card for comfort, remembrance, and support.",type:"sympathy",palette:"Cream, Mauve, Burgundy, Sage Green",style:"Quiet Luxury Memorial",tone:"Warm and Personal",focus:"Honoring a Legacy"},
     {label:"Get Well Soon Card",desc:"A warm get well card focused on healing, rest, and recovery.",type:"getWell",palette:"Sunny Yellow, Cream, Sage",style:"Soft Wellness",tone:"Warm Wishes",focus:"Rest and Restoration"},
@@ -925,7 +977,7 @@
     languages:["English","Spanish","French","Portuguese","German","Italian","Arabic","Hindi"],
     relationships:["Not Specified","Mother","Father","Sister","Brother","Daughter","Son","Spouse","Partner","Close Friend","Coworker or Colleague","Teacher","Student","Neighbor","Community Member","Caregiver"],
     ages:["Not Specified","Baby","Child","Teen","Young Adult","Adult","Mature Adult","Family / Multiple Ages"],
-    genders:["Female","Male"],
+    genders:["Gender Not Specified","Female","Male","Girl","Boy","Gender-Neutral Recipient","Family or Group"],
     audiences:["Individual Recipient","Family","Friend Group","Faith Community","Workplace / Corporate","School Community","Healthcare Setting","General Audience"],
     lengths:["Short Front Message","Medium Message","Detailed Personal Message","Front + Inside Message"],
     sizes:["5 x 7 Portrait","7 x 5 Landscape","4.25 x 5.5 Folded","A6 Postcard","1080 x 1080 Square","1080 x 1350 Portrait","1080 x 1920 Story"],
@@ -933,9 +985,25 @@
     designerBrands:["Unbranded / No Designer","Gucci","Fendi","Chanel","Louis Vuitton","Dior","Prada","Versace","Saint Laurent / YSL","Burberry","Hermès","Valentino","Balenciaga","Coach","Michael Kors","Dolce & Gabbana","Tiffany & Co.","Cartier","Christian Louboutin","Luxury Designer Mix"],
     designerPlacements:["Where Applicable","Designer-inspired birthday cake","Character outfit and shoes","Handbag and accessories","Gift boxes and shopping bags","Cake, gifts, and party details","Background and decorative accents","Coordinated full-card luxury theme","Subtle pattern and color inspiration","Single focal designer detail"],
     kidsElements:["Not a Kids Card","Classic dolls and dollhouse","Fashion dolls and accessories","Baby dolls and nursery toys","Toy trucks and construction vehicles","Monster trucks and race cars","Trains and railroad adventure","Airplanes and helicopters","Stuffed animals and teddy bears","Dinosaurs and prehistoric adventure","Unicorns and rainbows","Princess and fairytale theme","Mermaids and under-the-sea fantasy","Superheroes and comic-book action","Robots and futuristic gadgets","Space, planets, and astronauts","Football, basketball, baseball, and soccer","Video games and gaming controllers","Building blocks and creative toys","Farm animals and tractors","Jungle and safari animals","Ocean creatures and underwater fun","Puppies, kittens, and playful pets","School supplies and learning fun","Candy, cupcakes, and sweet treats","Carnival and circus fun","Ballet, dance, and tutus","Music, instruments, and singing","Science experiments and discovery","Books and storybook adventure","Girl-themed celebration mix","Boy-themed celebration mix","Gender-neutral colorful toy mix","Mixed toy box celebration"],
+    d9Organizations:["Alpha Kappa Alpha Sorority, Incorporated","Delta Sigma Theta Sorority, Incorporated","Zeta Phi Beta Sorority, Incorporated","Sigma Gamma Rho Sorority, Incorporated","Alpha Phi Alpha Fraternity, Incorporated","Kappa Alpha Psi Fraternity, Incorporated","Omega Psi Phi Fraternity, Incorporated","Phi Beta Sigma Fraternity, Incorporated","Iota Phi Theta Fraternity, Incorporated"],
+    d9Occasions:["Birthday","Congratulations","Line Anniversary","Founders’ Day","Graduation","Encouragement","Sympathy and Support","Retirement","Appreciation","Welcome to the Chapter","Going Away and Farewell","Sisterhood","Brotherhood","Chapter Recognition","General Celebration"],
+    d9RecipientTerms:["Soror","Frat","Sister","Brother","Line Sister","Line Brother","Chapter Member","Friend","Mentor","Chapter Leader","Graduate","Retiree"],
+    d9ElementStyles:["Organization-Coordinated Mix","Greek letters only","Greek letters and founding year","Varsity chenille Greek letters","Embroidered Greek-letter patch","Organization-associated symbols","Organization-color florals","Line jacket and varsity details","Pearls and polished accessories where appropriate","Denim and chenille details","Luxury metallic Greek letters","Minimal modern organization accents","Bold chapter celebration","Photo keepsake with Greek-letter frame","Custom organization-coordinated elements"],
     representations:["No Character","Single Adult","Single Child","Family Group","Caregiver and Recipient","Healthcare Professional","Diverse Hands Only","Pet Tribute","Symbolic Silhouette","Custom"],
     photoTreatments:["No Photo","Photo Placeholder","Framed Tribute Photo","Semi-Transparent Background Photo","Illustrated Portrait","Symbolic Imagery Only"],
     outputs:["Full Image-Generation Prompt","Canva Design Prompt","Front + Inside Copy","Coordinated Collection Brief"]
+  };
+
+  const d9Profiles = {
+    "Alpha Kappa Alpha Sorority, Incorporated":{letters:"ΑΚΑ",colors:"Salmon Pink and Apple Green",elements:"ivy leaves and pearl accents"},
+    "Delta Sigma Theta Sorority, Incorporated":{letters:"ΔΣΘ",colors:"Crimson and Cream",elements:"violets and tasteful elephant imagery"},
+    "Zeta Phi Beta Sorority, Incorporated":{letters:"ΖΦΒ",colors:"Royal Blue and White",elements:"doves and pearl accents"},
+    "Sigma Gamma Rho Sorority, Incorporated":{letters:"ΣΓΡ",colors:"Royal Blue and Gold",elements:"poodle imagery and gold accents"},
+    "Alpha Phi Alpha Fraternity, Incorporated":{letters:"ΑΦΑ",colors:"Black and Old Gold",elements:"sphinx-inspired and tasteful ape imagery"},
+    "Kappa Alpha Psi Fraternity, Incorporated":{letters:"ΚΑΨ",colors:"Crimson and Cream",elements:"diamond and cane-inspired accents"},
+    "Omega Psi Phi Fraternity, Incorporated":{letters:"ΩΨΦ",colors:"Royal Purple and Old Gold",elements:"lamp and bulldog imagery"},
+    "Phi Beta Sigma Fraternity, Incorporated":{letters:"ΦΒΣ",colors:"Royal Blue and Pure White",elements:"blue-and-white dove imagery"},
+    "Iota Phi Theta Fraternity, Incorporated":{letters:"ΙΦΘ",colors:"Charcoal Brown and Gilded Gold",elements:"centaur-inspired and brown-and-gold accents"}
   };
 
   const $ = id => document.getElementById(id);
@@ -1049,6 +1117,10 @@
     fill("designerBrand",common.designerBrands);
     fill("designerPlacement",common.designerPlacements);
     fill("kidsElements",common.kidsElements);
+    fill("d9Organization",common.d9Organizations);
+    fill("d9Occasion",common.d9Occasions);
+    fill("d9RecipientTerm",common.d9RecipientTerms);
+    fill("d9ElementStyle",common.d9ElementStyles);
     fill("representation",common.representations);
     fill("photoTreatment",common.photoTreatments);
     fill("outputType",common.outputs);
@@ -1057,7 +1129,7 @@
     $("language").value="English";
     $("relationship").value="Not Specified";
     $("ageRange").value="Not Specified";
-    $("gender").value="Female";
+    $("gender").value="Gender Not Specified";
     $("audience").value="Individual Recipient";
     $("messageLength").value="Medium Message";
     $("size").value="5 x 7 Portrait";
@@ -1065,6 +1137,10 @@
     $("designerBrand").value="Unbranded / No Designer";
     $("designerPlacement").value="Where Applicable";
     $("kidsElements").value="Not a Kids Card";
+    $("d9Organization").value="None";
+    $("d9Occasion").value="General Celebration";
+    $("d9RecipientTerm").value="Soror";
+    $("d9ElementStyle").value="Organization-Coordinated Mix";
     $("representation").value="No Character";
     $("photoTreatment").value="No Photo";
     $("outputType").value="Full Image-Generation Prompt";
@@ -1081,6 +1157,8 @@
 
   function refreshCategory(){
     const c=category();
+    const isD9=$("cardType").value==="d9Cards";
+    $("d9CardOptions").classList.toggle("hidden",!isD9);
     fill("focus",c.focuses);
     fill("tone",c.tones);
     fill("palette",c.palettes);
@@ -1104,6 +1182,12 @@
     $("texture").value=c.textures[0];
     $("fontPairing").value=c.fonts[0];
     $("layout").value=c.layouts[0];
+    if(isD9){
+      if(!d9Profiles[$("d9Organization").value]) $("d9Organization").value="Alpha Kappa Alpha Sorority, Incorporated";
+      if($("d9Occasion").value==="None") $("d9Occasion").value="General Celebration";
+      if($("d9RecipientTerm").value==="None") $("d9RecipientTerm").value="Soror";
+      if($("d9ElementStyle").value==="None") $("d9ElementStyle").value="Organization-Coordinated Mix";
+    }
     syncCustomFields();
   }
 
@@ -1126,6 +1210,7 @@
     $("designStyle").value=p.style;
     $("tone").value=p.tone;
     $("focus").value=p.focus;
+    if(p.organization) $("d9Organization").value=p.organization;
     showToast(`${p.label} loaded`);
   }
 
@@ -1144,6 +1229,11 @@
     $("texture").value=randomItem(c.textures);
     $("fontPairing").value=randomItem(c.fonts);
     $("layout").value=randomItem(c.layouts);
+    if($("cardType").value==="d9Cards"){
+      $("d9Occasion").value=randomItem(common.d9Occasions);
+      $("d9RecipientTerm").value=randomItem(common.d9RecipientTerms);
+      $("d9ElementStyle").value=randomItem(common.d9ElementStyles);
+    }
     generate();
   }
 
@@ -1159,6 +1249,7 @@
       caregiver:["Your Care Matters","You Are Appreciated","Thank You for Showing Up"],
       mentalWellness:["One Day at a Time","Be Gentle With Yourself","You Are Not Alone"],
       jobLoss:["The Next Chapter","Your Gifts Still Matter","Keep Moving Forward"],
+      d9Cards:["Celebrating Excellence and Service","A Bond Built to Last","Proud of the Legacy","Stronger Through Sisterhood and Brotherhood","Honoring the Journey"],
       goingAway:["Wishing You the Very Best","The Next Adventure Awaits","You Will Be Missed","Farewell and Good Luck","New Roads, New Memories"],
       birthday:["Happy Birthday","Celebrate Your Day","Cheers to Another Beautiful Year","Born to Shine","A Beautiful New Chapter"],
       thinkingOfYou:["Thinking of You","You Are on My Heart","Sending a Little Love"],
@@ -1200,7 +1291,7 @@ Design quality: ${selectedValue("qualityTier")}`);
     if($("recipientName").value.trim()) recipient.push(`Recipient: ${$("recipientName").value.trim()}`);
     if(selectedValue("relationship")!=="Not Specified" && selectedValue("relationship")!=="None") recipient.push(`Relationship: ${selectedValue("relationship")}`);
     if(selectedValue("ageRange")!=="Not Specified" && selectedValue("ageRange")!=="None") recipient.push(`Age range: ${selectedValue("ageRange")}`);
-    if(selectedValue("gender")!=="None") recipient.push(`Gender reference: ${selectedValue("gender")}`);
+    if(selectedValue("gender")!=="None" && selectedValue("gender")!=="Gender Not Specified") recipient.push(`Gender reference: ${selectedValue("gender")}`);
     if(selectedValue("audience")!=="None") recipient.push(`Audience: ${selectedValue("audience")}`);
     lines.push("RECIPIENT CONTEXT\n"+recipient.join("\n"));
 
@@ -1213,6 +1304,20 @@ Message length: ${selectedValue("messageLength")}`;
     if($("closing").value.trim()) copy+=`\nClosing sentiment: "${$("closing").value.trim()}"`;
     copy+=`\nSignature line: ${$("senderName").value.trim() || "[Sender Name]"}`;
     lines.push("CARD COPY\n"+copy);
+
+    if(type==="d9Cards"){
+      const orgName=selectedValue("d9Organization");
+      const org=d9Profiles[orgName] || {letters:"Custom Greek letters",colors:"Custom organization colors",elements:"custom organization-associated elements"};
+      lines.push(`D9 ORGANIZATION DIRECTION
+Organization: ${orgName}
+Greek letters: ${org.letters}
+Official color direction: ${org.colors}
+Associated non-crest elements: ${org.elements}
+D9 card occasion: ${selectedValue("d9Occasion")}
+Recipient term: ${selectedValue("d9RecipientTerm")}
+Element treatment: ${selectedValue("d9ElementStyle")}
+Keep every color, Greek letter, founding-year reference, and symbolic element consistent with this organization only. Do not mix imagery, colors, letters, terminology, or symbols from another organization.`);
+    }
 
     let visualDirection=`VISUAL DIRECTION
 Color palette: ${palette}
@@ -1251,6 +1356,7 @@ Avoid guaranteed outcomes, medical advice, therapy language, or unsolicited advi
     if(type==="mentalWellness") safety+="\nKeep the wording supportive and non-clinical.";
     if(type==="jobLoss") safety+="\nDo not connect employment status to personal worth or guarantee a new job.";
     if(type==="goingAway") safety+="\nBalance appreciation and sadness with encouragement. Do not use guilt, pressure the recipient to stay, or frame the departure as betrayal.";
+    if(type==="d9Cards") safety+="\nDo not create or imitate official crests, shields, seals, or protected organizational insignia. Use only the selected organization’s Greek letters, coordinated colors, general varsity styling, and associated non-crest decorative imagery. Never mix organizations.";
     lines.push("MESSAGE SAFEGUARDS\n"+safety);
 
     lines.push(`PREMIUM QUALITY REQUIREMENTS
@@ -1406,6 +1512,15 @@ Keep all text inside the safe area with print-safe margins. Use 300 DPI print-qu
     $("photoPreview").classList.add("hidden");
   }
 
+  function handleD9OrganizationChange(){
+    const organization=selectedValue("d9Organization");
+    if(organization!=="None" && organization!=="Custom" && $("cardType").value!=="d9Cards"){
+      $("cardType").value="d9Cards";
+      refreshCategory();
+      showToast("D9 card options loaded");
+    }
+  }
+
   let toastTimer;
   function showToast(msg){
     $("toast").textContent=msg;
@@ -1428,6 +1543,7 @@ Keep all text inside the safe area with print-safe margins. Use 300 DPI print-qu
   $("resetBtnBottom").addEventListener("click",reset);
   $("referencePhoto").addEventListener("change",handlePhoto);
   $("removePhotoBtn").addEventListener("click",removePhoto);
+  $("d9Organization").addEventListener("change",handleD9OrganizationChange);
   $("clearSavedBtn").addEventListener("click",()=>{
     savedPrompts=[];
     localStorage.removeItem("heartfeltSimpleSaved");
